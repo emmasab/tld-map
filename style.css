@@ -1,0 +1,113 @@
+body {
+    background-color: #808e9c;
+    font-family: 'Roboto', sans-serif;
+}
+
+div#map {
+    right: 0;
+    left: 360px;
+}
+
+div#sidebar {
+    width: 360px;
+    left: 0;
+    z-index: 1;
+    padding: 15px 10px 0 15px;
+}
+
+div#map, div#sidebar {
+    bottom: 0;
+    position: absolute;
+    top: 0;
+}
+
+#sidebar-wrap > h3 {
+    cursor: pointer;
+}
+
+#sidebar-wrap > h3.hidden {
+    opacity: 0.5;
+    text-decoration: line-through;
+}
+
+ul.key {
+	list-style-type: none;
+	margin: 0;
+    padding: 0;
+    column-count: 2;
+    columns: 2;
+    column-gap: 5px;
+}
+
+ul.key>li {
+    font-size: 14px;
+    height: 25px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+i {
+    width: 15px;
+    height: 17px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    float: left;
+    margin-right: 7px;
+    line-height: 35px;
+}
+
+ul.key>li.hidden {
+    opacity: 0.5;
+    text-decoration: line-through;
+}
+
+.innerHidden {
+    display: none;
+}
+
+/* Locations */
+li#houseAccess>i { background-image: url(./icons/house_access.png); }
+li#houseNonAccess>i { background-image: url(./icons/house_nonaccess.png); }
+li#houseDestroyed>i { background-image: url(./icons/house_destroyed.png); }
+li#houseUndetermined>i { background-image: url(./icons/house_undetermined.png); }
+li#caveAccess>i { background-image: url(./icons/cave_access.png); }
+li#caveNonAccess>i { background-image: url(./icons/cave_nonaccess.png); }
+li#spawn>i { background-image: url(./icons/spawn.png); }
+li#car>i { background-image: url(./icons/car.png); }
+li#tractor>i { background-image: url(./icons/tractor.png); }
+li#oneway>i { background-image: url(./icons/oneway.png); }
+li#twoway>i { background-image: url(./icons/twoway.png); }
+li#ropePresent>i { background-image: url(./icons/rope_present.png); }
+/* Interactible locations*/
+li#fireplace>i { background-image: url(./icons/fireplace.png); }
+li#bed>i { background-image: url(./icons/bed.png); }
+li#workshop>i { background-image: url(./icons/workshop.png); }
+li#safe>i { background-image: url(./icons/safe.png); }
+li#firepit>i { background-image: url(./icons/firepit.png); }
+/* Environment */
+li#corpse>i { background-image: url(./icons/corpse.png); }
+li#cattail>i { background-image: url(./icons/cattail.png); }
+li#mushroom>i { background-image: url(./icons/mushroom.png); }
+li#saplingBirch>i { background-image: url(./icons/sapling_birch.png); }
+li#saplingMaple>i { background-image: url(./icons/sapling_maple.png); }
+li#lichen>i { background-image: url(./icons/lichen.png); }
+li#rosehips>i { background-image: url(./icons/rosehips.png); }
+/* Items */
+li#coal>i { background-image: url(./icons/coal.png); }
+li#book>i { background-image: url(./icons/book.png); }
+li#firestriker>i { background-image: url(./icons/firestriker.png); }
+li#axe>i { background-image: url(./icons/axe.png); }
+li#rifle>i { background-image: url(./icons/rifle.png); }
+li#revolver>i { background-image: url(./icons/revolver.png); }
+li#bow>i { background-image: url(./icons/bow.png); }
+li#hacksaw>i { background-image: url(./icons/hacksaw.png); }
+li#hammer>i { background-image: url(./icons/hammer.png); }
+li#rope>i { background-image: url(./icons/rope.png); }
+li#key>i { background-image: url(./icons/key.png); }
+/* Hunting */
+li#bear>i { background-image: url(./icons/bear.png); }
+li#wolf>i { background-image: url(./icons/wolf.png); }
+li#rabbit>i { background-image: url(./icons/rabbit.png); }
+li#deer>i { background-image: url(./icons/deer.png); }
+li#moose>i { background-image: url(./icons/moose.png); }

@@ -3,6 +3,10 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+.leaflet-container {
+    background-color: #E6E1AF;
+}
+
 div#map {
     right: 0;
     left: 360px;
@@ -79,12 +83,15 @@ li#tractor>i { background-image: url(./icons/tractor.png); }
 li#oneway>i { background-image: url(./icons/oneway.png); }
 li#twoway>i { background-image: url(./icons/twoway.png); }
 li#ropePresent>i { background-image: url(./icons/rope_present.png); }
+li#ropeMissing>i { background-image: url(./icons/rope_missing.png); }
+li#cache>i { background-image: url(./icons/cache.png); }
 /* Interactible locations*/
 li#fireplace>i { background-image: url(./icons/fireplace.png); }
 li#bed>i { background-image: url(./icons/bed.png); }
 li#workshop>i { background-image: url(./icons/workshop.png); }
 li#safe>i { background-image: url(./icons/safe.png); }
 li#firepit>i { background-image: url(./icons/firepit.png); }
+li#fishingHole>i { background-image: url(./icons/fishing_hole.png); }
 /* Environment */
 li#corpse>i { background-image: url(./icons/corpse.png); }
 li#cattail>i { background-image: url(./icons/cattail.png); }

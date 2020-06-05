@@ -9,10 +9,14 @@ if (debug)
 if (currentMap == 'index')
     currentMap = 'mountain_town';
 
-var map = L.map('map').setView([51.505, -0.09], 13);
+var bounds = [[85.02070774312594, -179.64843750000003], [-84.9747260970686, 179.12109375000003]];
+
+var map = L.map('map').setView([0, 0], 3);
 L.tileLayer('./maps/'+currentMap+'/{z}/{x}/{y}.png', {
-    attribution: '',
-    maxZoom: 4 
+    attribution: '<a href="https://github.com/emmasab/tld-map/">Credits and info</a>',
+    maxZoom: 4,
+    noWrap: true,
+    bounds: bounds
 }).addTo(map);
 
 

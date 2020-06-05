@@ -1,7 +1,16 @@
 var debug = false;
-var map = L.map('map').setView([51.505, -0.09], 13);
 
-L.tileLayer('./map/{z}/{x}/{y}.png', {
+var currentMap = window.location.pathname.split("/").pop();
+currentMap = currentMap.substr(0, currentMap.indexOf('.')); 
+
+if (debug)
+    currentMap += '_dev';
+
+if (currentMap == 'index')
+    currentMap = 'mountain_town';
+
+var map = L.map('map').setView([51.505, -0.09], 13);
+L.tileLayer('./maps/'+currentMap+'/{z}/{x}/{y}.png', {
     attribution: '',
     maxZoom: 4 
 }).addTo(map);

@@ -6,7 +6,7 @@ currentMap = currentMap.substr(0, currentMap.indexOf('.'));
 if (debug)
     currentMap += '_dev';
 
-if (currentMap == 'index' || currentMap == '')
+if (!currentMap == 'mystery_lake')
     currentMap = 'mountain_town';
 
 var bounds = [[85.02070774312594, -179.64843750000003], [-84.9747260970686, 179.12109375000003]];
